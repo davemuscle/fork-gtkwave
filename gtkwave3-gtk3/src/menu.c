@@ -4638,6 +4638,7 @@ if(GLOBALS->entrybox_text)
 	wave_regex_compile(GLOBALS->regexp_string_menu_c_1, WAVE_REGEX_SEARCH);
 	free_2(GLOBALS->entrybox_text);
 	t=GLOBALS->traces.first;
+	GLOBALS->entrybox_text = NULL;
 	while(t)
 		{
 		char *pnt;
